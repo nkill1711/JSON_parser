@@ -1,0 +1,39 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - "-I/home/shubham/Desktop/cpp/json_parser/include"
+    - "-std=c++17"
+
+Index:
+  Background: Build
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  ClangTidy:
+    Add:
+      - modernize*
+      - bugprone*
+      - performance*
+      - readability*
+    Remove:
+      - modernize-use-trailing-return-type
+    CheckOptions:
+      readability-identifier-naming.NamespaceCase: lower_case
+      readability-identifier-naming.ClassCase: CamelCase
+      readability-identifier-naming.StructCase: CamelCase
+      readability-identifier-naming.FunctionCase: camelBack
+      readability-identifier-naming.VariableCase: camelBack
+      readability-identifier-naming.ConstantCase: UPPER_CASE
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DeducedTypes: true
+  Designators: true
+
+Hover:
+  ShowAKA: true
+
+Completion:
+  AllScopes: true

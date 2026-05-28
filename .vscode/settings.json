@@ -1,0 +1,14 @@
+{
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=iwyu",
+    "--completion-style=detailed"
+  ],
+
+  "editor.lineNumbers": "relative",
+  "yaml.schemas": {
+    "file:///home/shubham/.vscode-oss/extensions/kylinideteam.kylin-clangd-0.4.0-linux-x64/res/schemas/clangd.json": "file:///home/shubham/Desktop/cpp/json_parser/.clangd"
+  }
+
+}
